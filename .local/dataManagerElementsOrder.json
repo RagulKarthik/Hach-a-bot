@@ -1,0 +1,41 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "career&Sequence_1",
+        "p3&Sequence_1",
+        "p2&Sequence_1",
+        "pass3&Sequence_1",
+        "pass2&Sequence_1",
+        "school2&Sequence_1",
+        "p1&Sequence_1",
+        "pass1&Sequence_1",
+        "school1&Sequence_1",
+        "college&Sequence_1",
+        "degree&Sequence_1",
+        "template&Sequence_1",
+        "address&Sequence_1",
+        "phone&Sequence_1",
+        "email&Sequence_1",
+        "Certifications&Sequence_1",
+        "Projects&Sequence_1",
+        "skills&Sequence_1",
+        "EducationalQualification&Sequence_1",
+        "name&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

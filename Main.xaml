@@ -1,0 +1,247 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="671,9499" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/word" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="592,9434" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="name" />
+      <Variable x:TypeArguments="x:String" Name="EducationalQualification" />
+      <Variable x:TypeArguments="x:String" Name="skills" />
+      <Variable x:TypeArguments="x:String" Name="Projects" />
+      <Variable x:TypeArguments="x:String" Name="Certifications" />
+      <Variable x:TypeArguments="x:String" Name="email" />
+      <Variable x:TypeArguments="x:String" Name="phone" />
+      <Variable x:TypeArguments="x:String" Name="address" />
+      <Variable x:TypeArguments="x:String" Name="template" />
+      <Variable x:TypeArguments="x:String" Name="degree" />
+      <Variable x:TypeArguments="x:String" Name="college" />
+      <Variable x:TypeArguments="x:String" Name="school1" />
+      <Variable x:TypeArguments="x:String" Name="pass1" />
+      <Variable x:TypeArguments="x:String" Name="p1" />
+      <Variable x:TypeArguments="x:String" Name="school2" />
+      <Variable x:TypeArguments="x:String" Name="pass2" />
+      <Variable x:TypeArguments="x:String" Name="pass3" />
+      <Variable x:TypeArguments="x:String" Name="p2" />
+      <Variable x:TypeArguments="x:String" Name="p3" />
+      <Variable x:TypeArguments="x:String" Name="career" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Name" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Name" Title="Name">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_7" IsPassword="False" Label="email" Title="email">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[email]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Phone" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_8" IsPassword="False" Label="phone" Title="phone">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[phone]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_9" IsPassword="False" Label="address" Title="address">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[address]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_23" IsPassword="False" Label="Career Objective" Title="Career">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[career]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Sequence DisplayName="Educational Details" sap:VirtualizedContainerService.HintSize="530,2901" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_12" IsPassword="False" Label="Degree" Title="DEGREE">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[degree]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_13" IsPassword="False" Label="College" Title="College">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[college]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_14" IsPassword="False" Label="Year of Passing" Title="Year of Passing">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[pass1]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_15" IsPassword="False" Label="Percentage" Title="Percentage">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[p1]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_16" IsPassword="False" Label="10 std School Name" Title="10 std School">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[school1]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_17" IsPassword="False" Label="Year of Passing" Title="Year of Passing">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[pass2]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_18" IsPassword="False" Label="Percentage" Title="Percentage">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[p2]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_19" IsPassword="False" Label="12 std School" Title="12 std School">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[school2]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_20" IsPassword="False" Label="Year of Passing" Title="Year of Passing">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[pass3]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="388,243" sap2010:WorkflowViewState.IdRef="InputDialog_21" IsPassword="False" Label="Percentage" Title="Percentage">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[p3]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+    </Sequence>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Skills" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_4" IsPassword="False" Label="Skills" Title="Skills">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[skills]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Projects" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Projects" Title="Projects">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Projects]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Certifications" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Certifications" Title="Certifications">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[Certifications]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="530,243" sap2010:WorkflowViewState.IdRef="InputDialog_10" IsPassword="False" Label="&#xD;&#xA;Please choose your template&#xD;&#xA;&#xD;&#xA;1. CoolRed&#xD;&#xA;2. HotRed'&#xD;&#xA;3. CoolYellow" Title="Choose Template">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[template]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <p:WordApplicationScope DisplayName="Word Application Scope" FilePath="[&quot;C:\Users\HP\Documents\HackTemplates\&quot;+template+&quot;.docx&quot;]" sap:VirtualizedContainerService.HintSize="530,3835" sap2010:WorkflowViewState.IdRef="WordApplicationScope_2">
+      <p:WordApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WordDocument">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WordDocument" Name="WordDocumentScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,3725" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_2" Replace="[name]" ReplaceAll="False" Search="_Name_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_3" Replace="[email]" ReplaceAll="False" Search="_Email_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_4" Replace="[phone]" ReplaceAll="False" Search="_Phone_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_5" Replace="[address]" ReplaceAll="False" Search="_Address_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_13" Replace="[career]" ReplaceAll="False" Search="_Career_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_10" Replace="[college]" ReplaceAll="False" Search="_College_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_11" Replace="[pass1]" ReplaceAll="False" Search="_pass1_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_14" Replace="[p1]" ReplaceAll="False" Search="_p1_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_15" Replace="[school1]" ReplaceAll="False" Search="_School1_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_16" Replace="[pass2]" ReplaceAll="False" Search="_Pass2_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_17" Replace="[p2]" ReplaceAll="False" Search="_p2_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_18" Replace="[school2]" ReplaceAll="False" Search="_School2_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_19" Replace="[pass3]" ReplaceAll="False" Search="Pass3_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_20" Replace="[p3]" ReplaceAll="False" Search="_p3_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_7" Replace="[Certifications]" ReplaceAll="False" Search="_Certifications_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_8" Replace="[Projects]" ReplaceAll="True" Search="_Projects_" />
+            <p:WordReplaceText Found="{x:Null}" DisplayName="Replace Text in Document" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="WordReplaceText_9" Replace="[skills]" ReplaceAll="False" Search="_Skills_" />
+            <p:WordExportToPdf DisplayName="Save Document as PDF" FilePath="[&quot;C:\Users\HP\Documents\LettersHack\&quot;+name.ToString()+&quot;.pdf&quot;]" sap:VirtualizedContainerService.HintSize="434,112" sap2010:WorkflowViewState.IdRef="WordExportToPdf_1" ReplaceExisting="False" />
+          </Sequence>
+        </ActivityAction>
+      </p:WordApplicationScope.Body>
+    </p:WordApplicationScope>
+  </Sequence>
+</Activity>
